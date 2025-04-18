@@ -4,7 +4,7 @@ Welcome to **env0.labs** — a systems-focused creative space building narrative
 
 This is not a product studio. It's a lab.
 
-We build small, sharp systems that model trust, interaction, and degradation — all layered on a retrofuturist terminal core. Think: _terminal as interface, simulator, and story engine._
+Small, sharp systems that model trust, interaction, and degradation — all layered on a retrofuturist terminal core. Think: _terminal as interface, simulator, and story engine._
 
 ---
 
