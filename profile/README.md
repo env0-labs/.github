@@ -8,7 +8,9 @@ Small, sharp systems that model trust, interaction, and degradation — all laye
 
 ---
 
-## 🧠 Core Projects
+## 🧭 Want to See the Systems?
+
+Here’s what’s being worked on right now:
 
 ### ⚙️ [`env0.core`](https://github.com/env0-labs/env0.core)
 The engine.  
