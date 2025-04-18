@@ -40,9 +40,19 @@ A horror experience where trust erodes not through glitches, but through perfect
 
 This is a personal experiment — an open, transparent attempt to see how far a non-developer can go with AI-assisted tooling.
 
-It began as a simple idea for a command-line learning game. One HTML file, one JS file, one CSS file. From there, the project rapidly grew — splitting into an engine (`env0.core`), a learning sim (`node.zero`), and a horror narrative (`entropy.echo`).
+To be clear:
+- My closest brush with web dev before this was editing HTML on Myspace in 2004  
+- I’d never opened VS Code before this project  
+- I’d never written JavaScript beyond a few variable tweaks in Adobe Captivate  
+- I didn’t know what a commit was  
+- I didn’t know `.md` files existed  
+- I’d used Git only to download other people’s repos — never contributed, never pushed  
+- I could move around Linux a bit, but that was it
 
-The person behind this? Not a professional coder. Just someone exploring what’s possible when AI is used not as a shortcut, but as a collaborator.
+This isn’t a project by someone brushing up on coding.  
+It’s a system built from **zero functional dev experience** — using AI as a co-designer to learn, build, and explore in real time.
+
+It began as a simple idea for a command-line learning game. One HTML file, one JS file, one CSS file. From there, the project rapidly grew — splitting into an engine (`env0.core`), a learning sim (`node.zero`), and a horror narrative (`entropy.echo`).
 
 Everything here is in progress. Nothing is released. But every part of it is real — and the whole lab is being built out loud.
 
