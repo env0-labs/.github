@@ -24,6 +24,10 @@ A horror experience where trust erodes not through glitches, but through perfect
 
 ---
 
+![Image](https://github.com/user-attachments/assets/e4113792-0472-4199-b03b-08fef05526e5)
+
+---
+
 ## 🧪 Philosophy
 
 - **Everything is a simulation** — even the failure states
