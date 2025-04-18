@@ -32,15 +32,17 @@ A horror experience where trust erodes not through glitches, but through perfect
 
 ---
 
-## 👋 About env0.labs
+## 🧠 About env0.labs
 
 This is a personal experiment — an open, transparent attempt to see how far a non-developer can go with AI-assisted tooling.
 
-Every project here is in progress. Nothing is released. And most of what you’ll find is exploratory in nature — part of a wider attempt to understand how we build, learn, and think alongside machines.
+It began as a simple idea for a command-line learning game. One HTML file, one JS file, one CSS file. From there, the project rapidly grew — splitting into an engine (`env0.core`), a learning sim (`node.zero`), and a horror narrative (`entropy.echo`).
 
-The code is real. The systems work. But this isn't a polished product suite — it's a workbench.
+The person behind this? Not a professional coder. Just someone exploring what’s possible when AI is used not as a shortcut, but as a collaborator.
 
-If you're curious, you're welcome to watch it unfold.
+Everything here is in progress. Nothing is released. But every part of it is real — and the whole lab is being built out loud.
+
+If you're reading this, you’re watching it happen.
 
 ---
 
