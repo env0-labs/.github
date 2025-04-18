@@ -24,13 +24,6 @@ A horror experience where trust erodes not through glitches, but through perfect
 
 ---
 
-## 📦 Meta & Docs
-
-This repo (`env0.meta`) contains planning files, system-wide documentation, and non-code thought dumps.  
-It exists to tie the suite together, not as a codebase.
-
----
-
 ## 🧪 Philosophy
 
 - **Everything is a simulation** — even the failure states
