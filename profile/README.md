@@ -32,5 +32,17 @@ A horror experience where trust erodes not through glitches, but through perfect
 
 ---
 
+## 👋 About env0.labs
+
+This is a personal experiment — an open, transparent attempt to see how far a non-developer can go with AI-assisted tooling.
+
+Every project here is in progress. Nothing is released. And most of what you’ll find is exploratory in nature — part of a wider attempt to understand how we build, learn, and think alongside machines.
+
+The code is real. The systems work. But this isn't a polished product suite — it's a workbench.
+
+If you're curious, you're welcome to watch it unfold.
+
+---
+
 **env0.labs**  
 _terminal-driven systems for when the interface is the story._
