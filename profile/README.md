@@ -16,6 +16,10 @@ Here’s what’s being worked on right now:
 The engine.  
 A CRT-style, terminal-based simulation layer built with `xterm.js`, custom input handling, visual effects, modular commands, and a focus on realism and narrative adaptability.
 
+### 🧭 [`env0.explore`](https://github.com/env0-labs/env0.explore)
+The documentation layer.  
+A living archive of essays, audit logs, methodology experiments, and AI-assisted research. Written mostly in Markdown, powered by real chat transcripts and practical explorations into trust, learning, simulation and entropy.
+
 ### 🎓 [`node.zero`](https://github.com/env0-labs/node.zero)
 The training layer.  
 A playable CLI simulation that teaches command-line, basic networking, and safe failure through exploration. Built on top of `env0.core`. Supportive. Educational. Empowering.
