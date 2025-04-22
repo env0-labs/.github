@@ -62,6 +62,10 @@ A horror experience where trust erodes not through glitches, but through perfect
 
 **Note:** This is an unstable build. Visual glitches are intentional. Or maybe they aren't. Who is to know?
 
+## Known Issues
+
+- ❗ **Terminal output may appear cut off or clipped in the browser.**  
+  This is a known rendering quirk with the current xterm.js setup and will be resolved in a future renderer upgrade. For now, it’s part of the degraded system aesthetic. Functionality is unaffected.
 
 ---
 
