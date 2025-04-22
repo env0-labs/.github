@@ -40,7 +40,7 @@ A CRT-style, terminal-based simulation layer built with `xterm.js`, custom input
 
 ### 🧮 [`env0.terminal`]
 The terminal.  
-Through extensive learning, adapting and more than one deep dive down the rabbit hole it became clear that `xterm.js` was way too heavy for this purpose. Instead of fighting `xterm.js` at every stage to get it to do something it was never intended to do, my intention is to build a custom renderer. Repo not built yet, just in conceptual stages.
+Through extensive learning, adapting and more than one deep dive down the rabbit hole it became clear that `xterm.js` was way too heavy for this purpose. Instead of fighting `xterm.js` at every stage to get it to do something it was never intended to do, my intention is to build a custom renderer. The env0.core project is stable for now (xterm.js is now never addressed directly, whole thing has a wrapper round it) but it's problematic for more advanced visual effect so needs to go. Repo not built yet, just in conceptual stages.
 
 ### 🧭 [`env0.explore`](https://github.com/env0-labs/env0.explore)
 The documentation layer.  
