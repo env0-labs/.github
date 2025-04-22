@@ -39,7 +39,7 @@ The engine.
 A CRT-style, terminal-based simulation layer built with `xterm.js`, custom input handling, visual effects, modular commands, and a focus on realism and narrative adaptability.
 
 ### 🧮 [`env0.terminal`]
-The Terminal.  
+The terminal.  
 Through extensive learning, adapting and more than one deep dive down the rabbit hole it became clear that `xterm.js` was way too heavy for this purpose. Instead of fighting `xterm.js` at every stage to get it to do something it was never intended to do, my intention is to build a custom renderer. Repo not built yet, just in conceptual stages.
 
 ### 🧭 [`env0.explore`](https://github.com/env0-labs/env0.explore)
