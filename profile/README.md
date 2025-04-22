@@ -38,7 +38,7 @@ A horror experience where trust erodes not through glitches, but through perfect
 
 - **Everything is a simulation** — even the failure states
 - **Design is psychological** — especially when trust is on the table
-- **Tooling matters** — we build no-code config layers and high-speed authoring tools into the process
+- **Tooling matters** — we intend to build no-code config layers and high-speed authoring tools into the process
 
 ---
 
@@ -60,9 +60,7 @@ It’s a system built from **zero functional dev experience** — using AI as a 
 
 It began as a simple idea for a command-line learning game. One HTML file, one JS file, one CSS file. From there, the project rapidly grew — splitting into an engine (`env0.core`), a learning sim (`node.zero`), and a horror narrative (`entropy.echo`).
 
-Everything here is in progress. Nothing is released. But every part of it is real — and the whole lab is being built out loud.
-
-If you're reading this, you’re watching it happen.
+Everything here is in progress. Nothing is released. But every part of it is real.
 
 ---
 
