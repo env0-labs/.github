@@ -56,7 +56,12 @@ A horror experience where trust erodes not through glitches, but through perfect
 
 ---
 
-![Image](https://github.com/user-attachments/assets/e4113792-0472-4199-b03b-08fef05526e5)
+## Live Demo (Proof of Concept)
+
+👉 [env0.core POC – GitHub Pages](https://env0-labs.github.io/env0.core/)
+
+**Note:** This is an unstable build. Visual glitches are intentional. Or maybe they aren't. Who is to know?
+
 
 ---
 
