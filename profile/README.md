@@ -65,7 +65,7 @@ A terminal where nothing is broken — but something is wrong. Mimicry, personal
 ## 🪪 Known Issues
 
 - ❗ **Terminal output may appear cut off or clipped.**  
-  This is a known quirk of the current `xterm.js` renderer. The core engine wraps it, so replacing it cleanly is on the roadmap.
+  This is a known quirk of the current `xterm.js` renderer. The core engine wraps it, so replacing it cleanly is on the roadmap. This wasn't the reason for starting to build env0.terminal but it kinda sealed the deal!
 
 ---
 
