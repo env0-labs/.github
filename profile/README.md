@@ -10,7 +10,9 @@ Small, sharp systems that model trust, interaction, and degradation — all laye
 
 ## 🧠 About env0.labs
 
-This is a personal experiment — an open, transparent attempt to see how far a non-developer can go with AI-assisted tooling.
+This is a personal experiment — an open, transparent attempt to see how far a non-developer can go with AI-assisted tooling. 
+
+Project started around the 4th of April, 2025.
 
 To be clear:
 - My closest brush with web dev before this was editing HTML on Myspace in 2004  
