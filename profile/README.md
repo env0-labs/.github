@@ -38,9 +38,12 @@ Nothing here is finished. But the direction is deliberate.
 The engine.  
 A terminal-style simulation framework with modular commands, fake filesystems, CRT visuals, and high narrative control. Built around `xterm.js`, but fully abstracted behind a wrapper for future renderer replacement.
 
-### 🧮 [`env0.terminal`](https://github.com/env0-labs/env0.terminal)  
-The renderer (planned).  
-`xterm.js` served well as a starting point, but it's fundamentally the wrong tool for stylised, glitch-heavy, high-fidelity interfaces. Instead of fighting it, we're designing a custom renderer from scratch — DOM- or canvas-based. Not built yet. Conceptual stage only.
+### 🧠 Terminal Renderer (now part of `env0.core`)  
+Originally planned as a separate project (`env0.terminal`), the terminal renderer is now fully integrated into [`env0.core`](https://github.com/env0-labs/env0.core) under `core/terminal/`. 
+
+It replaces `xterm.js` with a custom canvas renderer built for pixel-perfect control, narrative fidelity, glitch layering, and entropy modeling. It's no longer theoretical — it's functional, flexible, and already powering the engine.
+
+**Note:** The [demo on GitHub Pages](https://env0-labs.github.io/env0.core/) still uses the xterm-based version. Canvas renderer not yet deployed.
 
 ### 📚 [`env0.explore`](https://github.com/env0-labs/env0.explore)  
 The research layer.  
@@ -66,8 +69,9 @@ A terminal where nothing is broken — but something is wrong. Mimicry, personal
 
 ## 🪪 Known Issues
 
-- ❗ **Terminal output may appear cut off or clipped.**  
-  This is a known quirk of the current `xterm.js` renderer, all attempts to force it's resize either end with nothing happening or adject failure. The core engine wraps it, so replacing it cleanly is on the roadmap. This wasn't the reason for starting to build env0.terminal but it kinda sealed the deal!
+- ❗ **Demo still runs on legacy xterm.js renderer.**  
+  The live GitHub Pages demo hasn't yet been updated to use the new canvas terminal. Output bugs like misaligned text or scroll clipping are artifacts of xterm and will be resolved once the new renderer is deployed.
+
 
 ---
 
