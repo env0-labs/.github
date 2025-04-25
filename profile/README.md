@@ -36,10 +36,9 @@ Nothing here is finished. But the direction is deliberate.
 
 ### ⚙️ [`env0.core`](https://github.com/env0-labs/env0.core)  
 The engine.  
-A terminal-style simulation framework with modular commands, fake filesystems, CRT visuals, and high narrative control. Built around `xterm.js`, but fully abstracted behind a wrapper for future renderer replacement.
+A terminal-style simulation framework with modular commands, fake filesystems, CRT visuals, and high narrative control. Now powered by a custom canvas renderer (`core/terminal/`) built for glitch fidelity, entropy modulation, and full pixel control — no `xterm.js`, no dependencies, just raw terminal simulation from the grid up. 
 
-### 🧠 Terminal Renderer (now part of `env0.core`)  
-Originally planned as a separate project (`env0.terminal`), the terminal renderer is now fully integrated into [`env0.core`](https://github.com/env0-labs/env0.core) under `core/terminal/`. 
+### ⚙️ [`env0.core`](https://github.com/env0-
 
 It replaces `xterm.js` with a custom canvas renderer built for pixel-perfect control, narrative fidelity, glitch layering, and entropy modeling. It's no longer theoretical — it's functional, flexible, and already powering the engine.
 
