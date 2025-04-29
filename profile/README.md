@@ -62,14 +62,6 @@ A terminal where nothing is broken — but something is wrong. Mimicry, personal
 
 ---
 
-## 🪪 Known Issues
-
-- ❗ **Demo still runs on legacy xterm.js renderer.**  
-  The live GitHub Pages demo hasn't yet been updated to use the new canvas terminal. Output bugs like misaligned text or scroll clipping are artifacts of xterm and will be resolved once the new renderer is deployed.
-
-
----
-
 ## 🧪 Philosophy
 
 - **Everything is a simulation** — even the failure states  
