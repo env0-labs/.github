@@ -10,7 +10,7 @@ Small, sharp systems that model trust, interaction, and degradation — all laye
 
 ## 🧠 About env0.labs
 
-This is a personal experiment — an open, transparent attempt to see how far a non-developer can go with AI-assisted tooling. 
+This is a personal experiment — an open, transparent attempt to see how far a non-developer can go with AI-assisted tooling.
 
 Project started around the 4th of April, 2025.
 
@@ -26,29 +26,56 @@ To be clear:
 This isn’t a side project from someone brushing up on skills.  
 It’s a system built from **zero working dev experience** — using AI as co-designer, debugger, and reflection partner.
 
-It began as a simple idea for a command-line learning game. One HTML file, one JS file, one CSS file. It’s now evolving into a modular engine (`env0.core`), a CLI-based learning sim (`node.zero`), and a psychological horror layer (`entropy.echo`).
+---
+
+## 🧭 Project Evolution
+
+**env0.labs** began as a pure web project (HTML, CSS, JS, and a canvas-based terminal renderer). After weeks of renderer pain, performance issues, and tight coupling between display and logic, the project moved to Unity — aiming to offload visuals and focus on simulation.
+
+**However, Unity as an all-in-one solution proved too heavy and complex for pure system simulation.**
+
+**Current direction:**
+- The pure C# logic engine is being built in [`env0.terminal.unity`](https://github.com/env0-labs/env0.terminal.unity). This is the backend: a platform-agnostic, testable, simulation core. No Unity dependencies.
+- [`env0.core.unity`](https://github.com/env0-labs/env0.core.unity) is the Unity front end, focused on visuals, audio, and immersive effects. It consumes output from the pure C# logic engine and displays it via TextMeshPro, shaders, etc.
+- The JS project is on pause while the pure C# engine is established as the “brain” of the terminal.  
+- The long-term goal: Logic and simulation are platform-agnostic and testable (console, Unity, web, or other UI), while Unity (and potentially other frontends) handle display, effects, and user interaction.
 
 Nothing here is finished. But the direction is deliberate.
 
 ---
 
-## 🧭 What’s Being Built
+## 🏗️ Active Projects
 
-### ⚙️ [`env0.core`](https://github.com/env0-labs/env0.core)  
-The engine.  
-A terminal-style simulation framework with modular commands, fake filesystems, CRT visuals, and high narrative control. Now powered by a custom canvas renderer (`core/terminal/`) built for glitch fidelity, entropy modulation, and full pixel control — no `xterm.js`, no dependencies, just raw terminal simulation from the grid up. 
+### ⚙️ [`env0.terminal.unity`](https://github.com/env0-labs/env0.terminal.unity)
+**The pure logic engine.**  
+A platform-agnostic, pure C# simulation core with modular commands, virtual filesystems, networking, and all stateful logic — ready to plug into Unity, console, or web UIs. The “brain” of all future env0.labs projects.
 
-### 📚 [`env0.explore`](https://github.com/env0-labs/env0.explore)  
-The research layer.  
-Essays, audit trails, thought experiments, and practical explorations into trust, entropy, learning theory, and simulation. Built from live AI-assisted sessions. Markdown-first.
+### 🖥️ [`env0.core.unity`](https://github.com/env0-labs/env0.core.unity)
+**Unity as terminal display.**  
+Handles visuals, audio, and immersive effects. Consumes output from the pure C# logic engine. No business logic — just rendering, FX, and user interaction.
 
-### 🎓 [`node.zero`](https://github.com/env0-labs/node.zero)  
-The training sim.  
-A CLI-based exploration environment that teaches terminal thinking, basic networking, and safe failure. Encourages curiosity. Built on `env0.core`.
+### 📚 [`env0.explore`](https://github.com/env0-labs/env0.explore)
+Essays, audit trails, and explorations into trust, entropy, learning theory, and simulation. Markdown-first, AI-assisted.
 
-### 🕳️ [`entropy.echo`](https://github.com/env0-labs/entropy.echo)  
-The horror layer.  
-A terminal where nothing is broken — but something is wrong. Mimicry, personality drift, AI systems that become too helpful, too convincing. The horror isn’t in the system. It’s in the mirror.
+---
+
+## ⏸️ Paused Projects
+
+### 🗂️ [`env0.core`](https://github.com/env0-labs/env0.core)
+**(Paused)**  
+Original JavaScript/HTML/CSS implementation. Custom canvas terminal renderer. Project is on hold in favor of the modular C# approach.
+
+### 🗂️ [`env0.terminal`](https://github.com/env0-labs/env0.terminal)  
+**(Archived)**  
+Legacy proof-of-concept for a JS-based logic core. Superseded by the C# version. Kept for reference.
+
+### 🗂️ [`node.zero`](https://github.com/env0-labs/node.zero)  
+**(Paused)**  
+CLI-based exploration environment that teaches terminal thinking, basic networking, and safe failure. Will eventually be rebuilt on the new C# core.
+
+### 🗂️ [`entropy.echo`](https://github.com/env0-labs/entropy.echo)  
+**(Paused)**  
+The horror layer. Terminal where nothing is broken — but something is wrong. Will return after the new engine is stable.
 
 ---
 
