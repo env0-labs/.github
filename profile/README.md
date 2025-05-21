@@ -30,15 +30,17 @@ It’s a system built from **zero working dev experience** — using AI as co-de
 
 ## 🧭 Project Evolution
 
-**env0.labs** began as a pure web project (HTML, CSS, JS, and a canvas-based terminal renderer). After weeks of renderer pain, performance issues, and tight coupling between display and logic, the project moved to Unity — aiming to offload visuals and focus on simulation.
+**env0.labs** started as a pure web project (HTML, CSS, JS, and a custom canvas terminal renderer). After weeks of renderer pain, performance issues, and tight coupling between display and logic, the project shifted direction:
 
-**However, Unity as an all-in-one solution proved too heavy and complex for pure system simulation.**
+- **Unity was chosen as a front end** to offload visuals and handle immersive effects. But Unity as an all-in-one solution was too heavy and restrictive for true system simulation.
+- The project split: **C# became the logic core**, and Unity is now the orchestration/presentation layer.
+- The original game, `node.zero`, is on hold—not abandoned, but parked after realizing that maintaining two major games and a backend was too much to take on solo.
+- **Current direction:**  
+  - **env0.terminal**: Pure C# DLL, simulation engine, zero UI. Handles all logic, filesystem, and network state. Testable and platform-agnostic.
+  - **entropy.echo**: Unity front end and game orchestration. Handles all visuals, audio, FX, and story layering. Owns the world state and orchestrates play.
+  - **env0.explore**: Ongoing essays, audits, and knowledge trails.
 
-**Current direction:**
-- The pure C# logic engine is being built in [`env0.terminal.unity`](https://github.com/env0-labs/env0.terminal.unity). This is the backend: a platform-agnostic, testable, simulation core. No Unity dependencies.
-- [`env0.core.unity`](https://github.com/env0-labs/env0.core.unity) is the Unity front end, focused on visuals, audio, and immersive effects. It consumes output from the pure C# logic engine and displays it via TextMeshPro, shaders, etc.
-- The JS project is on pause while the pure C# engine is established as the “brain” of the terminal.  
-- The long-term goal: Logic and simulation are platform-agnostic and testable (console, Unity, web, or other UI), while Unity (and potentially other frontends) handle display, effects, and user interaction.
+The JavaScript proof-of-concept remains for reference only. Everything is being rebuilt from the ground up, leveraging lessons learned.
 
 Nothing here is finished. But the direction is deliberate.
 
@@ -46,36 +48,26 @@ Nothing here is finished. But the direction is deliberate.
 
 ## 🏗️ Active Projects
 
-### ⚙️ [`env0.terminal.unity`](https://github.com/env0-labs/env0.terminal.unity)
-**The pure logic engine.**  
-A platform-agnostic, pure C# simulation core with modular commands, virtual filesystems, networking, and all stateful logic — ready to plug into Unity, console, or web UIs. The “brain” of all future env0.labs projects.
+### ⚙️ [`env0.terminal`](https://github.com/env0-labs/env0.terminal)
+**Pure C# logic engine.**  
+A platform-agnostic simulation core for modular commands, virtual filesystems, and networking. Plug it into Unity, CLI, or web UIs. The “brain” of all future env0.labs projects.
 
-### 🖥️ [`env0.core.unity`](https://github.com/env0-labs/env0.core.unity)
-**Unity as terminal display.**  
-Handles visuals, audio, and immersive effects. Consumes output from the pure C# logic engine. No business logic — just rendering, FX, and user interaction.
+### 🖥️ [`entropy.echo`](https://github.com/env0-labs/entropy.echo)
+**Unity game + orchestration layer.**  
+Owns world state, handles visuals, audio, and narrative. Talks to env0.terminal via a strict one-way interface—DLL accepts only input and broadcasts output; Unity never sends internal state back.
 
 ### 📚 [`env0.explore`](https://github.com/env0-labs/env0.explore)
 Essays, audit trails, and explorations into trust, entropy, learning theory, and simulation. Markdown-first, AI-assisted.
 
 ---
 
-## ⏸️ Paused Projects
+## 🗂️ Archived & Paused Projects
 
-### 🗂️ [`env0.core`](https://github.com/env0-labs/env0.core)
-**(Paused)**  
-Original JavaScript/HTML/CSS implementation. Custom canvas terminal renderer. Project is on hold in favor of the modular C# approach.
+### 🗂️ JavaScript projects (`env0.core`, `env0.terminal.archive`)
+Legacy JS/HTML/CSS terminal renderers and early experiments. All are now deprecated in favor of the pure C# approach.
 
-### 🗂️ [`env0.terminal`](https://github.com/env0-labs/env0.terminal)  
-**(Archived)**  
-Legacy proof-of-concept for a JS-based logic core. Superseded by the C# version. Kept for reference.
-
-### 🗂️ [`node.zero`](https://github.com/env0-labs/node.zero)  
-**(Paused)**  
-CLI-based exploration environment that teaches terminal thinking, basic networking, and safe failure. Will eventually be rebuilt on the new C# core.
-
-### 🗂️ [`entropy.echo`](https://github.com/env0-labs/entropy.echo)  
-**(Paused)**  
-The horror layer. Terminal where nothing is broken — but something is wrong. Will return after the new engine is stable.
+### 🗂️ [`node.zero`](https://github.com/env0-labs/node.zero)
+CLI-based adventure environment — paused, not abandoned. Will return after core systems stabilize.
 
 ---
 
@@ -83,7 +75,7 @@ The horror layer. Terminal where nothing is broken — but something is wrong. W
 
 👉 [env0.core on GitHub Pages](https://env0-labs.github.io/env0.core/)
 
-**Note:** This is a live prototype. Visual glitches may be aesthetic. Or they may be bugs. Either way, they’re part of the test.
+**Note:** This is a live, JavaScript-based prototype. Visual glitches may be intentional, or bugs. Either way, it’s proof the whole thing is getting rebuilt from scratch.
 
 ---
 
